@@ -12,6 +12,11 @@ ul {
 	width: 100%;
 }
 
+.border {
+	border-style: solid;
+	border-width: 2px;
+}
+
 .logo {
 	background: url(http://placehold.it/200x100);
 	background-repeat: no-repeat;

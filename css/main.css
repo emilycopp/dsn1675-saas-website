@@ -1,4 +1,4 @@
-header {
+header, .pre-footer{
 	background-color: #000;
 }
 
@@ -9,6 +9,7 @@ ul {
 .banner {
 	background: url(http://placehold.it/600x300);
 	background-size: cover;
+	width: 100%;
 }
 
 .logo {

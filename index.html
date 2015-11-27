@@ -11,70 +11,76 @@
 </head>
 <body>
 
-<header class="grid grid-middle">
-	<div class="logo island unit unit-xs-centered s-1-4 m-1-4 l-1-4">
-		<a href="index.html">ONE+ONE</a>
+<ul class="skip-links">
+	<li><a href="#main">Jump to main content</a></li>
+	<li><a href="#nav">Jump to navigation</a></li>
+</ul>
+
+<header class="grid grid-middle" role="banner">
+	<div class="island unit unit-xs-centered xs-1 s-1-2 m-1-4 l-1-4">
+		<a href="index.html">
+			<img class="img-flex" src="images/logo.svg" alt="">
+		</a>
 	</div>
-	<nav class="text-center unit unit-xs-centered s-3-4 m-3-4 l-3-4">
-		<ul class="list-group list-group--inline">
+	<nav class="text-center unit unit-xs-centered xs-1 s-1-2 m-3-4 l-3-4">
+		<ul class="nav list-group list-group--inline">
 			<li><a class="island-1-4" href="tour.html">Tour</a></li>
 			<li><a class="island-1-4" href="pricing.html">Pricing</a></li>
 			<li><a class="island-1-4" href="signup.html">Sign Up</a></li>
 		</ul>
 	</nav>
-
-		<div class="grid banner">
-		<div class="pad-t unit s-1 m-1 l-1 gutter">
-			<h1 class="text-center">Helping you plan the perfect wedding</h1>
-		</div>
-		<div class="unit s-1 m-1 l-1 gutter">
-			<p class="text-center">We will help you through every detail of your wedding.</p>
-		</div>
-		<div class="unit unit-xs-centered unit-s-centered unit-m-centered unit-l-centered">
-			<a href="signup.html">Sign Up</a>
-		</div>
-	</div>
-
 </header>
 
-<main>
+<main id="main" role="main">
+<div class="grid banner">
+	<div class="pad-t unit xs-1 s-1 m-1 l-1 gutter">
+		<h1 class="text-center">Helping you plan the perfect wedding</h1>
+	</div>
+	<div class="unit xs-1 s-1 m-1 l-1 gutter">
+		<p class="text-center">We will help you through every detail of your wedding.</p>
+	</div>
+	<div class="button micro pad-b-2 unit unit-xs-centered unit-s-centered unit-m-centered unit-l-centered">
+		<a href="signup.html">Sign Up</a>
+	</div>
+</div>
+
 <div class="grid">
-	<div class="unit s-1 m-1 l-1-2 gutter pad-b">
+	<div class="unit xs-1 s-1 m-1 l-1-2 gutter pad-b">
 		<div class="grid">
-			<div class="pad-t unit s-1 m-1 l-1">
+			<div class="pad-t unit xs-1 s-1 m-1 l-1">
 				<h2>Features</h2>
 			</div>
-			<div class="unit s-1 m-1-2 l-1">
+			<div class="unit xs-1 s-1 m-1-2 l-1">
 				<img class="img-flex" src="http://placehold.it/350x200" alt="">
 			</div>
-			<div class="unit s-1 m-1-2 l-1">
+			<div class="unit xs-1 s-1 m-1-2 l-1">
 				<div class="grid">
-					<div class="pad-l unit s-1 m-1 l-1">
+					<div class="pad-l unit xs-1 s-1 m-1 l-1">
 						<p>Helping you build a personal website and keeping track of every detail with calendars, timelines with checklists and text reminders and email notifications.</p>
 					</div>
-					<div class="pad-l unit s-1 m-1 l-1">
-						<a href="tour.html">Check it out</a>
+					<div class="button micro pad-l unit xs-1 s-1 m-1 l-1">
+						<a href="tour.html" aria-label="Features offered">Check it out</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="unit s-1 m-1 l-1-2 gutter pad-b">
+	<div class="unit xs-1 s-1 m-1 l-1-2 gutter pad-b">
 		<div class="grid">
-			<div class="pad-t unit s-1 m-1 l-1">
+			<div class="pad-t unit xs-1 s-1 m-1 l-1">
 				<h2>Pricing</h2>
 			</div>
-			<div class="unit s-1 m-1-2 l-1">
+			<div class="unit xs-1 s-1 m-1-2 l-1">
 				<img class="img-flex" src="http://placehold.it/350x200" alt="">
 			</div>
-			<div class="unit s-1 m-1-2 l-1">
+			<div class="unit xs-1 s-1 m-1-2 l-1">
 				<div class="grid">
-					<div class="pad-l unit s-1 m-1 l-1">
+					<div class="pad-l unit xs-1 s-1 m-1 l-1">
 						<p>We have plans that will meet your each and every need.</p>
 					</div>
-					<div class="pad-l unit s-1 m-1 l-1">
-						<a href="pricing.html">Check it out</a>
+					<div class="button micro pad-l unit xs-1 s-1 m-1 l-1">
+						<a href="pricing.html" aria-label="Pricing plans">Check it out</a>
 					</div>
 				</div>
 			</div>
@@ -83,28 +89,40 @@
 </div>
 
 <div class="pre-footer grid grid-middle">
-	<div class="logo island unit s-1-2 m-1-4 l-1-4">
-		<a href="index.html">ONE+ONE</a>
+	<div class="island unit xs-1 unit-xs-centered s-1-2 m-1-4 l-1-4">
+		<a href="index.html">
+			<img class="img-flex" src="images/logo.svg" alt="">
+		</a>
 	</div>
-	<div class="island unit s-1-2 unit-offset-m-1-2 m-1-4 l-1-4">
+	<div class="button island unit xs-1 unit-xs-centered s-1-2 m-1-4 l-1-4">
 		<a href="signup.html">Sign Up</a>
 	</div>
 </div>
 </main>
 
 <footer class="grid">
-	<div class="pad-t pad-b-1-2 unit s-1 m-1 l-1">
+	<div class="pad-t pad-b-1-2 unit xs-1 s-1 m-1 l-1">
 		<div class="grid">
-			<div class="unit s-1-3 m-1-3 l-1-3">
-				<img class="img-flex" src="" alt="pinterest">
+			<div class="island unit xs-1-3 s-1-3 unit-push-m-1-5 m-1-5 unit-push-l-2-7 l-1-7">
+				<a href="https://www.pinterest.com/">
+					<img class="img-flex" src="images/pinterest.png" alt="pinterest">
+				</a>
 			</div>
-			<div class="unit s-1-3 m-1-3 l-1-3">
-				<img class="img-flex" src="" alt="facebook">
+			<div class="island unit xs-1-3 s-1-3 unit-push-m-1-5 m-1-5 unit-push-l-2-7 l-1-7">
+				<a href="https://www.facebook.com/">
+					<img class="img-flex" src="images/facebook.png" alt="facebook">
+				</a>
 			</div>
-			<div class="unit s-1-3 m-1-3 l-1-3">
-				<img class="img-flex" src="" alt="email">
+			<div class="island unit xs-1-3 s-1-3 unit-push-m-1-5 m-1-5 unit-push-l-2-7 l-1-7">
+				<a href="https://twitter.com/">
+					<img class="img-flex" src="images/twitter.png" alt="email">
+				</a>
 			</div>
 		</div>
+	</div>
+
+	<div class="unit" role="contentinfo">
+		<p>© 2015 ONE+ONE</p>
 	</div>
 </footer>
 

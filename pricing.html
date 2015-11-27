@@ -11,121 +11,146 @@
 </head>
 <body>
 
-<header class="grid grid-middle">
-	<div class="logo island unit unit-xs-centered s-1-4 m-1-4 l-1-4">
-		<a href="index.html">ONE+ONE</a>
+<ul class="skip-links">
+	<li><a href="#main">Jump to main content</a></li>
+	<li><a href="#nav">Jump to navigation</a></li>
+</ul>
+
+<header class="grid grid-middle" role="banner">
+	<div class="island unit unit-xs-centered s-1-4 m-1-4 l-1-4">
+		<a href="index.html">
+			<img class="img-flex" src="images/logo.svg" alt="">
+		</a>
 	</div>
 	<nav class="text-center unit unit-xs-centered s-3-4 m-3-4 l-3-4">
-		<ul class="list-group list-group--inline">
+		<ul class="nav list-group list-group--inline">
 			<li><a class="island-1-4" href="tour.html">Tour</a></li>
 			<li><a class="current island-1-4" href="pricing.html">Pricing</a></li>
 			<li><a class="island-1-4" href="signup.html">Sign Up</a></li>
 		</ul>
 	</nav>
-
-		<div class="grid banner">
-		<div class="pad-t unit s-1 m-1 l-1">
-			<h1 class="text-center">Pricing plans for your perfect wedding</h1>
-		</div>
-		<div class="unit unit-xs-centered unit-s-centered unit-m-centered unit-l-centered">
-			<a href="signup.html">Sign Up</a>
-		</div>
-	</div>
 </header>
 
-<main>
+<main id="main" role="main">
+<div class="grid banner">
+	<div class="pad-t unit xs-1 s-1 m-1 l-1">
+		<h1 class="text-center">Pricing plans for your perfect wedding</h1>
+	</div>
+	<div class="button micro pad-b-2 unit unit-xs-centered unit-s-centered unit-m-centered unit-l-centered">
+		<a href="signup.html">Sign Up</a>
+	</div>
+</div>
+
 <div class="grid">
-	<div class="unit s-1 m-1 l-1-3 gutter">
+	<div class="unit xs-1 s-1 m-1 l-1-3 gutter">
 		<div class="grid grid-bottom">
-			<div class="pad-t unit s-1 m-1 l-1">
+			<div class="pad-t unit xs-1 s-1 m-1 l-1">
 				<h2>Free</h2>
 			</div>
-			<div class="unit s-1 m-1-2 l-1">
+			<div class="unit xs-1 s-1 m-1-2 l-1">
 				<h3>The Thrifty Bride</h3>
-				<p>Free basic website</p>
-				<p>Basic printables</p>
-				<p>Online calendar</p>
-				<p>Local vendors contact list</p>
-				<p>Moodboards function</p>
-				<p>Gift registry across multiple vendors</p>
-				<p>Guest tracking up to 75 guests</p>
+				<ul>
+					<li><a>Free basic website</a></li>
+					<li><a>Basic printables</a></li>
+					<li><a>Online calendar</a></li>
+					<li><a>Local vendors contact list</a></li>
+					<li><a>Moodboards function</a></li>
+					<li><a>Gift registry across multiple vendors</a></li>
+					<li><a>Guest tracking up to 75 guests</a></li>
+				</ul>
 			</div>
-			<div class="push unit s-1 m-1-4 unit-offset-m-1-4 l-1">
-				<a href="signup.html">Sign Up</a>
+			<div class="button micro pad-t push unit xs-1 s-1 m-1-4 unit-offset-m-1-4 l-1">
+				<a href="signup.html" aria-label="Sign up for free plan">Sign Up</a>
 			</div>
 		</div>
 	</div>
 
-	<div class="unit s-1 m-1 l-1-3 gutter">
+	<div class="unit xs-1 s-1 m-1 l-1-3 gutter">
 		<div class="grid grid-bottom">
-			<div class="pad-t unit s-1 m-1 l-1">
+			<div class="pad-t unit xs-1 s-1 m-1 l-1">
 				<h2>$14/Month</h2>
 			</div>
-			<div class="unit s-1 m-1-2 l-1">
+			<div class="unit xs-1 s-1 m-1-2 l-1">
 				<h3>The Standard</h3>
-				<p>Free basic website</p>
-				<p>Custom printables</p>
-				<p>Planning calendar app</p>
-				<p>Local vendors contact list</p>
-				<p>Moodboards function</p>
-				<p>Gift registry across multiple vendors</p>
-				<p>Budget tracking</p>
-				<p>Guest tracking up to 150 guests</p>
+				<ul>
+					<li><a>Free basic website</a></li>
+					<li><a>Custom printables</a></li>
+					<li><a>Planning calendar app</a></li>
+					<li><a>Local vendors contact list</a></li>
+					<li><a>Moodboards function</a></li>
+					<li><a>Gift registry across multiple vendors</a></li>
+					<li><a>Budget tracking</a></li>
+					<li><a>Guest tracking up to 150 guests</a></li>
+				</ul>
 			</div>
-			<div class="push unit s-1 m-1-4 unit-offset-m-1-4 l-1">
-				<a href="signup.html">Sign Up</a>
+			<div class="button micro pad-t push unit sx-1 s-1 m-1-4 unit-offset-m-1-4 l-1">
+				<a href="signup.html" aria-label="Sign up for $14 per month">Sign Up</a>
 			</div>
 		</div>
 	</div>
 
-	<div class="unit s-1 m-1 l-1-3 gutter">
+	<div class="unit xs-1 s-1 m-1 l-1-3 gutter">
 		<div class="grid grid-bottom">
 			<div class="pad-t unit s-1 m-1 l-1">
 				<h2>$75/Year</h2>
 			</div>
-			<div class="unit s-1 m-1-2 l-1">
+			<div class="pad-b unit xs-1 s-1 m-1-2 l-1">
 				<h3>The Big Spender</h3>
-				<p>Custom website</p>
-				<p>Custom printables</p>
-				<p>Free 20 page photo keepsake</p>
-				<p>Planning calendar app</p>
-				<p>Local vendors contact list with membership discount</p>
-				<p>Moodboards function</p>
-				<p>Gift registry across multiple vendors</p>
-				<p>Budget tracking</p>
-				<p>Honeymoon planning package</p>
-				<p>Guest tracking for unlimited number of guests</p>
+				<ul>
+					<li><a>Custom website</a></li>
+					<li><a>Custom printables</a></li>
+					<li><a>Free 20 page photo keepsake</a></li>
+					<li><a>Planning calendar app</a></li>
+					<li><a>Local vendors contact list with membership discount</a></li>
+					<li><a>Moodboards function</a></li>
+					<li><a>Gift registry across multiple vendors</a></li>
+					<li><a>Budget tracking</a></li>
+					<li><a>Honeymoon planning package</a></li>
+					<li><a>Guest tracking for unlimited number of guests</a></li>
+				</ul>
 			</div>
-			<div class="push unit s-1 m-1-4 unit-offset-m-1-4 l-1">
-				<a href="signup.html">Sign Up</a>
+			<div class="button micro push unit xs-1 s-1 m-1-4 unit-offset-m-1-4 l-1">
+				<a href="signup.html" aria-label="Sign up for $75 per year">Sign Up</a>
 			</div>
 		</div>
 	</div>
 </div>
 
 <div class="pre-footer grid grid-middle">
-	<div class="logo island unit s-1-2 m-1-4 l-1-4">
-		<a href="index.html">ONE+ONE</a>
+	<div class="island unit xs-1 unit-xs-centered s-1-2 m-1-4 l-1-4">
+		<a href="index.html">
+			<img class="img-flex" src="images/logo.svg" alt="">
+		</a>
 	</div>
-	<div class="island unit s-1-2 unit-offset-m-1-2 m-1-4 l-1-4">
+	<div class="button island unit xs-1 unit-xs-centered s-1-2 m-1-4 l-1-4">
 		<a href="signup.html">Sign Up</a>
 	</div>
 </div>
 </main>
 
 <footer class="grid">
-	<div class="pad-t pad-b-1-2 text-center unit s-1 m-1 l-1">
+	<div class="pad-t pad-b-1-2 unit xs-1 s-1 m-1 l-1">
 		<div class="grid">
-			<div class="unit s-1-3 m-1-3 l-1-3">
-				<img class="img-flex" src="" alt="pinterest">
+			<div class="island unit xs-1-3 s-1-3 unit-push-m-1-5 m-1-5 unit-push-l-2-7 l-1-7">
+				<a href="https://www.pinterest.com/">
+					<img class="img-flex" src="images/pinterest.png" alt="pinterest">
+				</a>
 			</div>
-			<div class="unit s-1-3 m-1-3 l-1-3">
-				<img class="img-flex" src="" alt="facebook">
+			<div class="island unit xs-1-3 s-1-3 unit-push-m-1-5 m-1-5 unit-push-l-2-7 l-1-7">
+				<a href="https://www.facebook.com/">
+					<img class="img-flex" src="images/facebook.png" alt="facebook">
+				</a>
 			</div>
-			<div class="unit s-1-3 m-1-3 l-1-3">
-				<img class="img-flex" src="" alt="email">
+			<div class="island unit xs-1-3 s-1-3 unit-push-m-1-5 m-1-5 unit-push-l-2-7 l-1-7">
+				<a href="https://twitter.com/">
+					<img class="img-flex" src="images/twitter.png" alt="email">
+				</a>
 			</div>
 		</div>
+	</div>
+
+	<div class="unit" role="contentinfo">
+		<p>© 2015 ONE+ONE</p>
 	</div>
 </footer>
 

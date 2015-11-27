@@ -3,11 +3,21 @@ header, .pre-footer{
 }
 
 .current {
-	background-color: #fff;
+	background-color: grey;
 }
 
 ul {
 	margin: 0;
+}
+
+nav a {
+	color: #fff;
+}
+
+.button a {
+	color: #fff;
+	background-color: #000;
+	padding: 10px;
 }
 
 .banner {
@@ -30,6 +40,14 @@ ul {
 
 .pad-l {
 	padding-left: 1.4rem;
+}
+
+.nav-lable {
+	display: none;
+}
+
+.nav-lable {
+	display: block;
 }
 
 }

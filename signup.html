@@ -7,7 +7,8 @@
   <link href="css/type.css" rel="stylesheet">
   <link href="css/grids.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
@@ -17,12 +18,12 @@
 </ul>
 
 <header class="grid grid-middle" role="banner">
-	<div class="island unit unit-xs-centered s-1-4 m-1-4 l-1-4">
+	<div class="island unit unit-xs-centered xs-1 s-1-2 m-1-4 l-1-4">
 		<a href="index.html" aria-label="Homepage">
 			<img class="img-flex" src="images/logo.svg" alt="homepage">
 		</a>
 	</div>
-	<nav class="text-center unit unit-xs-centered s-3-4 m-3-4 l-3-4">
+	<nav id="nav" role="navigation" class="text-center unit unit-xs-centered xs-1 s-1-2 m-3-4 l-3-4">
 		<ul class="nav list-group list-group--inline">
 			<li><a class="island-1-4" href="tour.html">Tour</a></li>
 			<li><a class="island-1-4" href="pricing.html">Pricing</a></li>
@@ -34,83 +35,149 @@
 <main id="main" role="main">
 
 <div class="grid">
-	<div class="gutter unit s-1 m-1 l-1">
+	<div class="gutter text-center unit xs-1 s-1 m-1 l-1">
 		<h1>Create Account</h1>
 	</div>
-	<div class="gutter unit s-1 m-1 l-1">
+	<div class="gutter unit xs-1 s-1 m-2-3 unit-offset-m-1-6 l-1">
 		<div class="grid">
-			<div class="border pad-l unit s-1 m-1-2 l-1">
-				<p>Email</p>
+
+			<div class="unit xs-1 s-1 m-1-2 l-1-2">
+				<label for="email">Email</label>
+				<input id="email" type="email" name="email" required placeholder="example@email.com">
 			</div>
-			<div class="border pad-l unit s-1 m-1-2 l-1">
-				<p>Username</p>
+
+			<div class="unit xs-1 s-1 m-1-2 l-1-2">
+				<label for="username">Username</label>
+				<input id="username" name="username" required placeholer="example_23">
 			</div>
-			<div class="border pad-l unit s-1 m-1-2 l-1">
-				<p>Password</p>
+
+			<div class="unit xs-1 s-1 m-1-2 l-1-2">
+				<label for="password">Password</label>
+				<input id="password" type="password" name="password" required placeholder="********">
 			</div>
-			<div class="border pad-l unit s-1 m-1-2 l-1">
-				<p>Confirm Password</p>
+
+			<div class="unit xs-1 s-1 m-1-2 l-1-2">
+				<label for="confirm">Confirm Password</label>
+				<input id="confirm" type="password" name="confirm" required placeholder="********">
 			</div>
-			<div class="border pad-l unit s-1 m-1-2 l-1">
-				<p>Price Plan</p>
+
+			<div class="unit xs-1 s-1 m-1 l-1">
+				<label for="plan">Price Plan</label>
+				<select id="plan" name="_subject">
+					<option>Select a Pricing Plan</option>
+					<option>Thrifty Bride (free)</option>
+					<option>Standard ($14/month)</option>
+					<option>Big Spender ($75/year</option>
+				</select>
 			</div>
-			<div class="border pad-l unit s-1 m-1-2 l-1">
-				<p>Payment Type</p>
+
+			<fieldset class="unit xs-1 s-1 m-1 l-1">
+				<legend>Payment Type</legend>
+
+				<input id="mastercard" type="radio" name="card type" value="mastercard">
+				<label for="mastercard">MasterCard</label>
+
+				<input id="visa" type="radio" name="card type" value="visa">
+				<label for="visa">Visa</label>
+
+				<input id="paypal" type="radio" name="card type" value="paypay">
+				<label for="paypal">PayPal</label>
+
+			</fieldset>
+
+			<div class="unit xs-1 s-1 m-1-2 l-1-2">
+				<label>Card Holder</label>
+				<input id="number" name="holder" required>
 			</div>
-			<div class="border pad-l unit s-2-3 m-2-3 l-2-3">
-				<p>Expiration Date</p>
+
+			<div class="unit xs-1 s-1 m-1-2 l-1-2">
+				<label for="number">Card Number</label>
+				<input id="number" type="number" name="number" required>
 			</div>
-			<div class="border pad-l unit s-1-3 m-1-3- l-1-3">
-				<p>CSC</p>
+
+			<div class="unit xs-1 s-1 m-1-2 l-1-2">
+				<label for="expiration">Expiration Date</label>
+				<input id="expiration" type="date" name="expiration" required>
 			</div>
-			<div class="border pad-l unit s-1 m-1 l-1">
-				<p>Billing Address Line 1</p>
+
+			<div class="unit xs-1 s-1 m-1-2 l-1-2">
+				<label for="security">Security Code</label>
+				<input id="security" name="security" required>
 			</div>
-			<div class="border pad-l unit s-1 m-1 l-1">
-				<p>Billing Address Line 2</p>
+
+			<div class="unit xs-1 s-1 m-1 l-1">
+				<label for="billing1">Billing Address Line 1</label>
+				<input id="billing1" name="billing1" required>
 			</div>
-			<div class="border pad-l unit s-1 m-1 l-1-3">
-				<p>City</p>
+
+			<div class="unit xs-1 s-1 m-1 l-1">
+				<label for="billing2">Billing Address Line 2</label>
+				<input id="billing2" name="billing2">
 			</div>
-			<div class="border pad-l unit s-1 m-1-2 l-1-3">
-				<p>State/Province/Region</p>
+
+			<div class="unit xs-1 s-1 m-1-2 l-1-2">
+				<label for="city">City</label>
+				<input id="city" name="city" required>
 			</div>
-			<div class="border pad-l unit s-1 m-1-2 l-1-3">
-				<p>Postal Code</p>
+
+			<div class="unit xs-1 s-1 m-1-2 l-1-2">
+				<label for="province">Provinces/Territories</label>
+				<select id="province" name="_subject">
+					<option>Select Province/Territory</option>
+					<option value="AB">Alberta</option>
+					<option value="BC">British Columbia</option>
+					<option value="MB">Manitoba</option>
+					<option value="NB">New Brunswick</option>
+					<option value="NL">Newfoundland and Labrador</option>
+					<option value="NS">Nova Scotia</option>
+					<option value="ON">Ontario</option>
+					<option value="PE">Prince Edward Island</option>
+					<option value="QC">Quebec</option>
+					<option value="SK">Saskatchewan</option>
+					<option value="NT">Northwest Territories</option>
+					<option value="NU">Nunavut</option>
+					<option value="YT">Yukon</option>
+				</select>
 			</div>
+
+			<div class="unit xs-1 s-1 m-1-2 l-1-2">
+				<label for="postal">Postal Code</label>
+				<input id="postal" name="postal code" required>
+			</div>
+
 		</div>
 	</div>
-	<div class="button pad-t text-center unit s-1 m-1 l-1 pad-b">
+	<div class="button pad-t text-center unit xs-1 s-1 m-1 l-1 pad-b">
 		<a href="thankyou.html">Create Account</a>
 	</div>
 </div>
 
 <div class="pre-footer grid grid-middle">
-	<div class="island unit xs-1 unit-xs-centered s-1-2 m-1-4 l-1-4">
+	<div class="island unit xs-1 unit-xs-centered s-1-2 m-1-3 l-1-4">
 		<a href="index.html" aria-label="Homepage">
 			<img class="img-flex" src="images/logo.svg" alt="homepage">
 		</a>
 	</div>
-	<div class="button island unit xs-1 unit-xs-centered s-1-2 m-1-4 l-1-4">
+	<div class="button island unit xs-1 unit-xs-centered s-1-2 m-1-3 l-1-4">
 		<a href="signup.html">Sign Up</a>
 	</div>
 </div>
 </main>
 
 <footer class="grid">
-	<div class="pad-t pad-b-1-2 unit xs-1 s-1 m-1 l-1">
+	<div class="pad-t pad-b-1-2 text-center unit xs-1 s-1 m-1 l-1">
 		<div class="grid">
-			<div class="island unit xs-1-3 s-1-3 unit-push-m-1-5 m-1-5 unit-push-l-2-7 l-1-7">
+			<div class="icon island unit xs-1-3 s-1-3 unit-push-m-1-5 m-1-5 unit-push-l-1-5 l-1-5">
 				<a href="https://www.pinterest.com/">
 					<img class="img-flex" src="images/pinterest.png" alt="pinterest">
 				</a>
 			</div>
-			<div class="island unit xs-1-3 s-1-3 unit-push-m-1-5 m-1-5 unit-push-l-2-7 l-1-7">
+			<div class="icon island unit xs-1-3 s-1-3 unit-push-m-1-5 m-1-5 unit-push-l-1-5 l-1-5">
 				<a href="https://www.facebook.com/">
 					<img class="img-flex" src="images/facebook.png" alt="facebook">
 				</a>
 			</div>
-			<div class="island unit xs-1-3 s-1-3 unit-push-m-1-5 m-1-5 unit-push-l-2-7 l-1-7">
+			<div class="icon island unit xs-1-3 s-1-3 unit-push-m-1-5 m-1-5 unit-push-l-1-5 l-1-5">
 				<a href="https://twitter.com/">
 					<img class="img-flex" src="images/twitter.png" alt="email">
 				</a>
@@ -118,7 +185,7 @@
 		</div>
 	</div>
 
-	<div class="unit" role="contentinfo">
+	<div class="unit xs-1 s-1 m-1 l-1 gutter" role="contentinfo">
 		<p>© 2015 ONE+ONE</p>
 	</div>
 </footer>

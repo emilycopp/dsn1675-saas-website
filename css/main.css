@@ -1,9 +1,18 @@
+label {
+	display: block;
+	cursor: pointer;
+}
+
+input + label {
+	display: inline;
+}
+
 header, .pre-footer{
 	background-color: #000;
 }
 
 .current {
-	background-color: grey;
+	color: #999;
 }
 
 ul {
@@ -12,16 +21,34 @@ ul {
 
 nav a {
 	color: #fff;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #7B1820;
 }
 
 .button a {
-	color: #fff;
-	background-color: #000;
-	padding: 10px;
+  background: #a62a33;
+  background-image: linear-gradient(to bottom, #a62a33, #610e15);
+  border-radius: 15px;
+  text-shadow: 1px 1px 3px #000;
+  box-shadow: 0px 1px 2px #000;
+  color: #ffffff;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.button a:hover {
+  background: #e03140;
+  background-image: linear-gradient(to bottom, #e03140, #8f242d);
+  text-decoration: none;
 }
 
 .banner {
-	background: url(http://placehold.it/600x300);
+	color: #fff;
+	background-image: url("../images/cake.jpg");
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
 	background-size: cover;
 	width: 100%;
 }
@@ -34,6 +61,14 @@ nav a {
 .logo {
 	background: url(http://placehold.it/200x100);
 	background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 20em) {
+
+.icon {
+	width: 100px;
+}
+
 }
 
 @media only screen and (min-width: 38em) {

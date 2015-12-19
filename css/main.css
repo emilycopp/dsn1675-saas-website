@@ -28,7 +28,7 @@ nav a:hover {
 	color: #7B1820;
 }
 
-.button a {
+.button a, button {
   background: #a62a33;
   background-image: linear-gradient(to bottom, #a62a33, #610e15);
   border-radius: 15px;
@@ -37,9 +37,18 @@ nav a:hover {
   color: #ffffff;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
+  border-style: none;
+  font-size: 1.0000rem;
+  line-height: 1.3000rem;
 }
 
 .button a:hover {
+  background: #e03140;
+  background-image: linear-gradient(to bottom, #e03140, #8f242d);
+  text-decoration: none;
+}
+
+button:hover {
   background: #e03140;
   background-image: linear-gradient(to bottom, #e03140, #8f242d);
   text-decoration: none;
